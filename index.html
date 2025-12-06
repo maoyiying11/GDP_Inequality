@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>GDP/Gender inequality index and Wage gap</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>GDP/Gender inequality index and Wage gap</h2>
+
+
+<div class="controls">
+    <button id="btn-gdp" class="active">GDP</button>
+    <button id="btn-ineq">Gender inequality index</button>
+    <button id="btn-3var">Joint impact analysis chart</button>
+</div>
+
+
+<div id="container">
+    <div id="map"></div>
+
+    <div id="chart-container">
+        <h3 id="scatter-title">Wage_gap vs GDP</h3>
+        <svg id="scatter" width="520" height="520"></svg>
+    </div>
+</div>
+
+
+<div id="triple-container">
+    <h3>GDP × Gender inequality index</h3>
+
+    <div id="triple-wrapper">
+        <svg id="triple-scatter" width="900" height="650"></svg>
+        <div id="triple-right-legend"></div>
+    </div>
+</div>
+
+
+<h3 id="country-title">Countries with wage gap data:</h3>
+<div id="country-list"></div>
+
+<script src="main.js"></script>
+
+
+</body>
+</html>
